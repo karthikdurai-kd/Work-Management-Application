@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Button Style overding */
+button {
+  height: 40px !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+
+/* Input Style overding */
+
+input,
+.ant-select-selector {
+  height: 40px !important;
+  border-radius: 0px !important;
+  border: 1px solid #bbbbbb !important;
+}
+
+input:focus,
+textarea:focus,
+.ant-select-selector:focus {
+  box-shadow: none !important;
+  border: 1px solid #343434 !important;
+}
+
+/* Antd Forn Input Item CSS Style overding */
+
+.antd-form-item {
+  margin-bottom: 10px !important;
+}
+
+.antd-form-item-label {
+  padding: 0px !important;
+}
+
+/* Antd Button CSS Style overding */
+.ant-btn-default {
+  background: #2e3840 !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+.ant-btn-default:hover {
+  background: #61677a !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+/* Antd Modal Footer Button CSS Style overding */
+.ant-modal-footer {
+  .ant-btn-default {
+    background: #dfdfde !important;
+    border-color: white !important;
+    color: black !important;
+  }
+
+  .ant-btn-primary {
+    background: #2e3840 !important;
+    border-color: white !important;
+    color: white !important;
+  }
+}
+
+/* Antd Table CSS Style overding */
+table {
+  border: 1px solid #bbbbbb !important;
+}
+
+.edit-icon,
+.delete-icon {
+  font-size: 20px;
+}
+
+/* AntD Card Divider Style overriding */
+.ant-card-bordered .ant-card-head {
+  border-bottom: 1px solid rgb(205, 205, 205); /* Change color as needed */
+}
+
+/* AntD Card Select Box Style overriding */
+.custom-select .ant-select-selection-placeholder,
+.custom-select .ant-select-selection-selected-value {
+  display: flex;
+  align-items: center;
+}
+
+.custom-select .ant-select-selection-item {
+  display: flex;
+  align-items: center;
+}
