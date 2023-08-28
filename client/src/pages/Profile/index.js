@@ -2,6 +2,7 @@
 
 import { Tabs } from "antd";
 import Projects from "./Projects";
+import General from "./General";
 
 const Profile = () => {
   // Tab Contents
@@ -14,7 +15,7 @@ const Profile = () => {
     {
       key: "2",
       label: "General",
-      children: "General",
+      children: <General />,
     },
   ];
 
